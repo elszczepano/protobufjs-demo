@@ -1,0 +1,9 @@
+package eventspackage;
+syntax = "proto3";
+
+message PaymentReceivedEvent {
+    string transactionId = 1;
+    uint32 priceInCents = 2;
+    uint32 receivedAt = 3;
+    optional string gateway = 4;
+}
