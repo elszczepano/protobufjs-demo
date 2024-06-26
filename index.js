@@ -17,4 +17,7 @@ import protobuf from "protobufjs";
 
   console.log( "ENCODED PAYLOAD:", encodedPayload );
   console.log( "DECODED PAYLOAD:", paymentEvent );
+
+  console.log( "SERIALIZED PROTOBUF SIZE:", encodedPayload.toString().length );
+  console.log( "SERIALIZED JSON SIZE:", JSON.stringify( paymentReceivedEventPayload ).length );
 } )();
